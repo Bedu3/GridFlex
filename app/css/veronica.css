@@ -1,0 +1,42 @@
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 5px;
+    grid-column-gap: 20px ;
+    grid-row-gap: 20px ;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    padding: 5px;
+    grid-column-gap: 20px ;
+    grid-row-gap: 20px ;
+    text-align: center;
+}
+
+.grid-container1 > div,
+.grid-container2 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+  border: solid  1px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+}
+
+.itemr2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
