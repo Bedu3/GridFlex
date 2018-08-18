@@ -1,0 +1,34 @@
+body{
+			font-family: Arial;
+		}
+		.container{
+			display: grid;
+			grid-gap: 10px;
+			height: 100vh;
+			grid-template-areas: "header  header footer"
+			                     "header header  right"
+			                     "header header  pie"
+			                     "down    down    down"
+			                     
+		}
+		.item{
+			background: lightblue;
+			padding: 10px;
+			border: 1px yellow;
+		}
+		.item .item {
+			background: yellow;
+		}
+         .header{
+         	grid-area: header;
+         }  
+         .footer{
+             grid-area: footer;
+         }
+         .right{
+         	grid-area: right;
+         	grid-row: 50px 50px 50px;
+         }
+         .fool{
+         	grid-area: down;
+         }
