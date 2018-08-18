@@ -73,14 +73,14 @@
   grid-template-rows: repeat(2, auto);
   text-align: left;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 
 .video {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .video h5,
