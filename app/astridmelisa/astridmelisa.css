@@ -1,0 +1,45 @@
+.contenedor1 {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	background:  #287f91;
+	border: 2px solid #404647;
+	column-gap: 5px;
+	grid-row-gap: 6px; 
+
+
+
+}
+
+
+
+.contenedor2 {
+	display: grid;
+	grid-template-columns: auto auto auto; 
+	/*display: flex;
+	justify-content: space-between;*/
+
+
+
+}
+
+
+.item {
+	
+	background: #42f448;
+	padding: 10px;
+	border: 2px solid #404647;
+	text-align: center;
+	font-family: Helvetica;
+	/*overflow: auto;*/
+	/*display: subgrid; */
+	column-gap: 6px;
+}
+
+.grande {
+	grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column: 1/span 3;
+    background:  #287f91; 
+}
+ 
+
