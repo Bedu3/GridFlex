@@ -1,44 +1,101 @@
-
-.grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto auto ;
-    background-color: #2196F3;
-    grid-gap: 10px;
-    padding: 10px;  
+.grid-container .main {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin: 30px;
+  padding: 10px;
+  /*width: auto;
+  height: auto;*/
+  background-color: grey;
 }
 
- .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 10px 0;
-    font-size: 20px;
+
+.grid-container .up {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+  background-color: grey;
+  
+   
 }
 
+.grid-container .left {
+  display: inline-grid;
+  grid-gap: 20px;
+  background-color: grey;
+}
+
+.grid-container .right {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: grey;
+  margin-right: 20px;
+}
+
+.grid-container .down {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  background-color: grey;
+  padding: 10px 20px 20px 20px;
+}
+
+.grid-item {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+  border: 2px solid grey;
+  border-radius: 8px;
+}
 .item1 {
-	grid-column: 1 / 4;
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top:18px;
+  margin-left: 20px;
 }
 
-.item1 {
-height: 200px;
-width: 2fr;
-margin: 10px;
-justify-content: flex-start;
+
+.item2 {
+  
+  grid-row-start: 1;
+  grid-row-end: 2;
+ 
+}
+
+.item3 {
+  
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.item4 {
+ 
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .item2, .item3, .item4 {
-height: 50px;
-width: 1fr;
-margin: 10px;
-padding: 10px;
-align-content: flex-end;
+  
+  grid-column-start: 1;
+  grid-column-end: 4; 
+  height: 4rem;
+  margin-top: 18px;
+
 }
 
 .item5, .item6, .item7 {
-height: 100px;
-width: 1fr;
-margin: 10px;
-padding: 10px;
-display: flex;
-justify-content: space-around;
-align-content: center;
+  grid-row-start: 2;
+  padding: 50px 0;
+  height: 6rem;
+}
+
+#pleft {
+  margin-top: 13px 0;
+
+}
+
+#pright {
+  margin-top: 120px;
 }
